@@ -13,7 +13,7 @@ namespace CreateSubscription
     {
         static void Main(string[] args)
         {
-           ClientCredential cred = new ClientCredential("id", "secret");
+           ClientCredential cred = new ClientCredential("id", "secret"); 
             AuthenticationContext ctx = new AuthenticationContext("https://login.windows.net/af8499b5-4034-4c9a-8bd3-4db9f078cb21");
             AuthenticationResult res = ctx.AcquireTokenAsync("https://manage.office.com", cred).GetAwaiter().GetResult();
 
